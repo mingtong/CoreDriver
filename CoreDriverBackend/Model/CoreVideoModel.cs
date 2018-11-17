@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CoreDriverBackend.DataService;
 using CoreDriverBackend.Model;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -12,7 +13,7 @@ using Newtonsoft.Json.Linq;
 
 namespace CoreDriverBackend.Model
 {
-    public class CoreVideoModel : IDriverDataService
+    public class CoreVideoModel : IVideoDataService
     {
         
         #region public interface
@@ -87,7 +88,7 @@ namespace CoreDriverBackend.Model
             var db = new CoreDriverContext();
 
             var jsonArray = new JArray();
-            var videos = db.CoreVideo.Where(v => v.ActressId == name);
+            var videos = db.CoreVideo.Where(v => v.ActressName == name);
             foreach (var v in videos)
             {
                 var json = JsonConvert.SerializeObject(v);
@@ -109,7 +110,7 @@ namespace CoreDriverBackend.Model
             var db = new CoreDriverContext();
 
             var jsonArray = new JArray();
-            var videos = db.CoreVideo.Where(v => v.Tag == tag);
+            var videos = db.CoreVideo.Where(v => v.Tags.Contains(tag));
             foreach (var v in videos)
             {
                 var json = JsonConvert.SerializeObject(v);
@@ -118,7 +119,6 @@ namespace CoreDriverBackend.Model
             db.Dispose();
             
             return jsonArray.ToString();
-        
         }
 
         public string GetDataByCompany(string companyName)
@@ -146,20 +146,62 @@ namespace CoreDriverBackend.Model
         public string AddNewData(string prefix, string serial, string wholeSerial, string nameCn, string nameEn, string nameJp,
             string tag, string magnetLink, string torrentLink, string pictureLink, string companyName)
         {
+            if (string.IsNullOrEmpty(wholeSerial))
+            {
+                wholeSerial = prefix + "-" + serial;
+            }
+            else
+            {
+                if(wholeSerial.Contains("-"))
+                {
+                    var ws = wholeSerial.Split('-');
+                    if (ws.Length == 2)
+                    {
+                        prefix = ws[0];
+                        serial = ws[1];
+                    }
+                    
+                }
+            }
+
             var db = new CoreDriverContext();
-            var newData = new CoreVideo();
-            newData.Prefix = prefix;
-            newData.Serial = int.Parse(serial);
-            newData.WholeSerial = wholeSerial;
-            newData.Tag = tag;
-            newData.MagnetLink = magnetLink;
-            newData.TorrentLink = torrentLink;
-            newData.PictureLink = pictureLink;
-            newData.CompanyName = companyName;
+            var data = db.CoreVideo.Where(v => v.WholeSerial == wholeSerial);
+            if (data.Any())
+            {
+                return "502";
+            }
+
+            var newData = new CoreVideo()
+            {
+                Prefix = prefix,
+                Serial = int.Parse(serial),
+                WholeSerial = wholeSerial,
+                Tags = tag,
+                MagnetLink = magnetLink,
+                TorrentLink = torrentLink,
+                PictureLink = pictureLink,
+                CompanyName = companyName,
+                ActressName = nameCn
+            };
 
             try
             {
-                var videos = db.CoreVideo.Add(newData);
+                db.CoreVideo.Add(newData);
+                
+                //Add new actress
+                var actress = db.CoreActress.Where(v => v.NameCn == nameCn);
+                if (!actress.Any())
+                {
+                    var newActress = new CoreActress()
+                    {
+                        NameCn = nameCn,
+                        NameEn = nameEn,
+                        NameJp = nameJp,
+                        PicturesLink = pictureLink
+                    };
+                    db.CoreActress.Add(newActress);
+                }
+
                 db.SaveChanges();
             }
             catch (Exception ex)
@@ -176,7 +218,12 @@ namespace CoreDriverBackend.Model
             return "200";
         }
 
-        public string DeleteDataBy(string wholeSerial)
+        public string AddNewData(string json)
+        {
+            return "";
+        }
+
+        public string DeleteDataBySerial(string wholeSerial)
         {
             //var db = new CoreDriverContext();
             //db.CoreVideo.Remove();
@@ -192,7 +239,7 @@ namespace CoreDriverBackend.Model
             newData.Prefix = prefix;
             newData.Serial = int.Parse(serial);
             newData.WholeSerial = wholeSerial;
-            newData.Tag = tag;
+            newData.Tags = tag;
             newData.MagnetLink = magnetLink;
             newData.TorrentLink = torrentLink;
             newData.PictureLink = pictureLink;

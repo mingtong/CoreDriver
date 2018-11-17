@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using CoreDriverBackend.DataService;
 using CoreDriverBackend.Model;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -16,34 +18,40 @@ namespace CoreDriverBackend.Controllers
     {
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public string Get()
         {
             var result = string.Empty;
-            var db = new CoreDriverContext();
-
-            var jsonArray = new JArray();
-            foreach (var v in db.CoreVideo.ToList())
-            {
-                var json = JsonConvert.SerializeObject(v);
-                jsonArray.Add(json);
-            }
-            db.Dispose();
             
-            return new string[] { jsonArray.ToString() };
+            IVideoDataService dataService = new CoreVideoModel();
+            result = dataService.GetAllData();
+
+            //result = System.Net.WebUtility.UrlDecode(result);
+            
+            return result;
         }
 
-        // GET api/values/5
+        // GET api/Video/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public string Get(string serial)
         {
-            return "value";
+            var result = string.Empty;
+            
+            IVideoDataService dataService = new CoreVideoModel();
+            result = dataService.GetDataByWholeSerial(serial);
+            
+            return result;
         }
 
-        // POST api/values
+        // POST api/Video
         [HttpPost]
         public void Post([FromBody]string value)
         {
+            var result = string.Empty;
             
+            IVideoDataService dataService = new CoreVideoModel();
+            result = dataService.AddNewData(value);
+            
+            //return result;
         }
 
         // PUT api/values/5

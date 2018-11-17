@@ -1,6 +1,6 @@
-namespace CoreDriverBackend.Model
+namespace CoreDriverBackend.DataService
 {
-    public interface IDriverDataService
+    public interface IVideoDataService
     {
         string GetAllData();
         string GetDataByPrefix(string prefix);
@@ -22,8 +22,11 @@ namespace CoreDriverBackend.Model
             string pictureLink, //maybe array
             string companyName
             );
+        string AddNewData(
+            string json //in one string
+        );
 
-        string DeleteDataBy(string wholeSerial);
+        string DeleteDataBySerial(string wholeSerial);
         
         string ModifyData(            string prefix,
             string serial,

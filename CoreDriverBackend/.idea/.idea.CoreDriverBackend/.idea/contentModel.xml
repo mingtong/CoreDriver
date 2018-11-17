@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_CoreDriverBackend.462841649.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
@@ -10,11 +11,14 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
         <e p="ActressController.cs" t="Include" />
-        <e p="CoreVideoController.cs" t="Include" />
         <e p="VideoController.cs" t="Include" />
       </e>
       <e p="CoreDriverBackend.csproj" t="IncludeRecursive" />
       <e p="CoreDriverBackend.sln" t="IncludeFlat" />
+      <e p="DataService" t="Include">
+        <e p="IActressDataService.cs" t="Include" />
+        <e p="IVideoDataService.cs" t="Include" />
+      </e>
       <e p="DataSource" t="Include">
         <e p="CoreDriver.db" t="Include" />
       </e>
@@ -24,11 +28,13 @@
         <e p="Newtonsoft.Json.xml" t="Include" />
       </e>
       <e p="Model" t="Include">
-        <e p="CoreActress.cs" t="Include" />
+        <e p="CoreActressModel.cs" t="Include" />
         <e p="CoreDriverContext.cs" t="Include" />
-        <e p="CoreVideo.cs" t="Include" />
         <e p="CoreVideoModel.cs" t="Include" />
-        <e p="IDriverDataService.cs" t="Include" />
+        <e p="Definition" t="Include">
+          <e p="CoreActress.cs" t="Include" />
+          <e p="CoreVideo.cs" t="Include" />
+        </e>
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">

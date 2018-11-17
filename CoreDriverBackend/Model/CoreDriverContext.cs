@@ -42,7 +42,7 @@ namespace CoreDriverBackend.Model
 
                 entity.Property(e => e.WholeSerial).ValueGeneratedNever();
 
-                entity.Property(e => e.ActressId).IsRequired();
+                entity.Property(e => e.ActressName).IsRequired();
 
                 entity.Property(e => e.Prefix).IsRequired();
             });
