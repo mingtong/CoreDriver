@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using CoreDriverBackend.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoreDriverBackend
 {
@@ -26,6 +28,9 @@ namespace CoreDriverBackend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            // Add  services.
+            services.AddDbContext<CoreDriverContext>(
+                options => options.UseSqlite(Configuration.GetConnectionString("CoreDriverDatabase")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +47,7 @@ namespace CoreDriverBackend
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            
         }
     }
 }
