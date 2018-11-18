@@ -12,6 +12,6 @@ namespace CoreDriverBackend.Model
         public int Height { get; set; }
         public string Chest { get; set; }
         public string Tags { get; set; }
-        public string PicturesLink { get; set; }
+        public string PictureLink { get; set; }
     }
 }

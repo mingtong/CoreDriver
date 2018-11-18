@@ -197,7 +197,7 @@ namespace CoreDriverBackend.Model
                         NameCn = nameCn,
                         NameEn = nameEn,
                         NameJp = nameJp,
-                        PicturesLink = pictureLink
+                        PictureLink = pictureLink
                     };
                     db.CoreActress.Add(newActress);
                 }
@@ -221,6 +221,47 @@ namespace CoreDriverBackend.Model
         public string AddNewData(string json)
         {
             return "";
+        }
+
+        public string AddNewData(CoreVideo newData)
+        {
+            var db = new CoreDriverContext();
+            var data = db.CoreVideo.Where(v => v.WholeSerial == newData.WholeSerial);
+            if (data.Any())
+            {
+                return "502";
+            }
+
+
+            try
+            {
+                db.CoreVideo.Add(newData);
+                
+                //Add new actress
+                var actress = db.CoreActress.Where(v => v.NameCn == newData.ActressName);
+                if (!actress.Any())
+                {
+                    var newActress = new CoreActress()
+                    {
+                        NameCn = newData.ActressName,
+                    };
+                    db.CoreActress.Add(newActress);
+                }
+
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return "501";
+                //throw;
+            }
+            finally
+            {
+                db.Dispose();
+            }
+
+            return "200";
         }
 
         public string DeleteDataBySerial(string wholeSerial)

@@ -26,4 +26,7 @@
       <HintPath>lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Index.cshtml" />
+  </ItemGroup>
 </Project>

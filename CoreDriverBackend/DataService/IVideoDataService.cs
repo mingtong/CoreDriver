@@ -1,3 +1,5 @@
+using CoreDriverBackend.Model;
+
 namespace CoreDriverBackend.DataService
 {
     public interface IVideoDataService
@@ -25,7 +27,9 @@ namespace CoreDriverBackend.DataService
         string AddNewData(
             string json //in one string
         );
-
+        string AddNewData(
+            CoreVideo value //in one string
+        );
         string DeleteDataBySerial(string wholeSerial);
         
         string ModifyData(            string prefix,

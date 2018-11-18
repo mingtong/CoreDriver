@@ -5,6 +5,7 @@ using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using CoreDriverBackend.DataService;
 using CoreDriverBackend.Model;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -44,7 +45,7 @@ namespace CoreDriverBackend.Controllers
 
         // POST api/Video
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromBody]CoreVideo value)
         {
             var result = string.Empty;
             

@@ -31,6 +31,17 @@ namespace CoreDriverBackend
             // Add  services.
             services.AddDbContext<CoreDriverContext>(
                 options => options.UseSqlite(Configuration.GetConnectionString("CoreDriverDatabase")));
+            
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder => { builder.AllowAnyOrigin().AllowAnyMethod(); });
+                options.AddPolicy("AllowAllHeaders",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin().AllowAnyHeader();
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +50,7 @@ namespace CoreDriverBackend
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseFileServer();
             }
             else
             {
@@ -47,7 +59,9 @@ namespace CoreDriverBackend
 
             app.UseHttpsRedirection();
             app.UseMvc();
-            
+            // Shows UseCors with CorsPolicyBuilder.
+            app.UseCors(builder =>
+                builder.AllowAnyOrigin().AllowAnyHeader());
         }
     }
 }

@@ -109,7 +109,7 @@ namespace CoreDriverBackend.Model
                 Height = height,
                 Chest = chest,
                 Tags = tags,
-                PicturesLink = pictureLink
+                PictureLink = pictureLink
             };
 
             try
@@ -154,7 +154,7 @@ namespace CoreDriverBackend.Model
                 Height = height,
                 Chest = chest,
                 Tags = tags,
-                PicturesLink = pictureLink
+                PictureLink = pictureLink
             };
 
             try

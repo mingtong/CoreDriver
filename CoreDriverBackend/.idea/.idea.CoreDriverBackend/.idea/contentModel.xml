@@ -37,7 +37,7 @@
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive">
-        <e p="Debug" t="Include">
+        <e p="Release" t="Include">
           <e p="netcoreapp2.1" t="Include">
             <e p="CoreDriverBackend.AssemblyInfo.cs" t="Include" />
           </e>
@@ -49,7 +49,66 @@
         <e p="launchSettings.json" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />
-      <e p="wwwroot" t="Include" />
+      <e p="wwwroot" t="Include">
+        <e p="index.html" t="Include" />
+        <e p="jspack" t="Include">
+          <e p="axios-0.19" t="Include">
+            <e p=".eslintrc" t="Include" />
+            <e p=".gitignore" t="Include" />
+            <e p=".npmignore" t="Include" />
+            <e p=".travis.yml" t="Include" />
+            <e p="dist" t="Include">
+              <e p="axios.js" t="Include" />
+              <e p="axios.map" t="Include" />
+              <e p="axios.min.js" t="Include" />
+              <e p="axios.min.map" t="Include" />
+            </e>
+          </e>
+          <e p="bootstrap-4.0.0" t="Include">
+            <e p="css" t="Include">
+              <e p="bootstrap-grid.css" t="Include" />
+              <e p="bootstrap-grid.css.map" t="Include" />
+              <e p="bootstrap-grid.min.css" t="Include" />
+              <e p="bootstrap-grid.min.css.map" t="Include" />
+              <e p="bootstrap-reboot.css" t="Include" />
+              <e p="bootstrap-reboot.css.map" t="Include" />
+              <e p="bootstrap-reboot.min.css" t="Include" />
+              <e p="bootstrap-reboot.min.css.map" t="Include" />
+              <e p="bootstrap.css" t="Include" />
+              <e p="bootstrap.css.map" t="Include" />
+              <e p="bootstrap.min.css" t="Include" />
+              <e p="bootstrap.min.css.map" t="Include" />
+            </e>
+            <e p="js" t="Include">
+              <e p="bootstrap.bundle.js" t="Include" />
+              <e p="bootstrap.bundle.js.map" t="Include" />
+              <e p="bootstrap.bundle.min.js" t="Include" />
+              <e p="bootstrap.bundle.min.js.map" t="Include" />
+              <e p="bootstrap.js" t="Include" />
+              <e p="bootstrap.js.map" t="Include" />
+              <e p="bootstrap.min.js" t="Include" />
+              <e p="bootstrap.min.js.map" t="Include" />
+            </e>
+          </e>
+          <e p="vue-2.5.17" t="Include">
+            <e p=".babelrc" t="Include" />
+            <e p=".editorconfig" t="Include" />
+            <e p=".eslintignore" t="Include" />
+            <e p=".eslintrc" t="Include" />
+            <e p=".flowconfig" t="Include" />
+            <e p=".gitignore" t="Include" />
+            <e p="vue.common.js" t="Include" />
+            <e p="vue.esm.browser.js" t="Include" />
+            <e p="vue.esm.js" t="Include" />
+            <e p="vue.js" t="Include" />
+            <e p="vue.min.js" t="Include" />
+            <e p="vue.runtime.common.js" t="Include" />
+            <e p="vue.runtime.esm.js" t="Include" />
+            <e p="vue.runtime.js" t="Include" />
+            <e p="vue.runtime.min.js" t="Include" />
+          </e>
+        </e>
+      </e>
     </e>
   </component>
 </project>
