@@ -50,7 +50,15 @@
       </e>
       <e p="Startup.cs" t="Include" />
       <e p="wwwroot" t="Include">
+        <e p="addArtist.html" t="Include" />
+        <e p="addVideo.html" t="Include" />
+        <e p="addVideo.js" t="Include" />
+        <e p="common.js" t="Include" />
+        <e p="image" t="Include">
+          <e p="111.jpg" t="Include" />
+        </e>
         <e p="index.html" t="Include" />
+        <e p="index.js" t="Include" />
         <e p="jspack" t="Include">
           <e p="axios-0.19" t="Include">
             <e p=".eslintrc" t="Include" />

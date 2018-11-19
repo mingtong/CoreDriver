@@ -2,60 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e8a1266-f8b7-4963-a9b2-a7e0e8b9a144" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wwwroot/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CoreDriverFrontend/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wwwroot/addVideo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreDriverBackend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreDriverBackend/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreDriverBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreDriverBackend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/VideoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/VideoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreDriverBackend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CoreDriverBackend.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataService/IVideoDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataService/IVideoDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/CoreActressModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CoreActressModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/CoreVideoModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/CoreVideoModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Definition/CoreActress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Definition/CoreActress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/bootstrap-4.0.0/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/v2.5.17.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.circleci/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.flowconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.github/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.github/COMMIT_CONVENTION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.github/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.esm.browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.runtime.common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.runtime.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.runtime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoreDriverFrontend/vue-2.5.17/vue.runtime.min.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +17,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/VideoController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="213">
               <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
               <folding>
                 <marker date="1542557077834" expanded="false" signature="6:313" ph="..." />
@@ -250,7 +199,7 @@
         <entry file="file://$PROJECT_DIR$/Model/Definition/CoreActress.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <marker date="1542557295501" expanded="false" signature="6:47" ph="..." />
                 <marker date="1542557295501" expanded="true" signature="82:477" ph="{...}" />
@@ -455,12 +404,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542387195373</updated>
       <workItem from="1542387197815" duration="18471000" />
-      <workItem from="1542448679243" duration="15800000" />
+      <workItem from="1542448679243" duration="17056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34271000" />
+    <option name="totallyTimeSpent" value="35527000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,14 +422,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32331902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32331902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3994602" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3994602" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32928476" />
@@ -512,19 +462,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Controllers/VideoController.cs</url>
-          <line>49</line>
-          <properties documentPath="$PROJECT_DIR$/Controllers/VideoController.cs" initialLine="49">
-            <startOffsets>
-              <option value="1371" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1397" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Model/CoreVideoModel.cs</url>
           <line>149</line>
@@ -785,7 +722,7 @@
     <entry file="file://$PROJECT_DIR$/Model/Definition/CoreActress.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <marker date="1542557295501" expanded="false" signature="6:47" ph="..." />
             <marker date="1542557295501" expanded="true" signature="82:477" ph="{...}" />
@@ -888,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/VideoController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="213">
           <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
           <folding>
             <marker date="1542557077834" expanded="false" signature="6:313" ph="..." />

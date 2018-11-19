@@ -1,8 +1,23 @@
 //var axios = require('axios');
+
+var vList = new Vue({
+    el: "#vList",
+    data: {
+        items: []
+    },
+    mounted() {
+
+    },
+});
+
 axios.get('api/Video')
     .then(function (response) {
         // handle success
-        alert(response.data);
+        if (response.status == 200) {
+            response.data.forEach(element => {
+                vList.$data.items.push(eval('(' + element + ')'));
+            });
+        }
     })
     .catch(function (error) {
         // handle error
@@ -11,23 +26,3 @@ axios.get('api/Video')
     .then(function () {
         // always executed
     });
-
-axios.post('api/Video', {
-    Prefix: 'SW',
-    Serial: '444',
-    WholeSerial: "SW-444",
-    ActressName: "铃木心春",
-    Tags: "长腿,高颜值",
-    MagnetLink: "",
-    TorrentLink: "",
-    PictureLink: "",
-    CompanyName: ""
-
-})
-    .then(function (response) {
-        console.log(response);
-    })
-    .catch(function (error) {
-        console.log(error);
-    });
-
