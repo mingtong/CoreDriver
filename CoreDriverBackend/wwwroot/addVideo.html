@@ -1,80 +1,89 @@
 <!doctype html>
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <script src="jspack/axios-0.19/dist/axios.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script src="jspack/vue-2.5.17/vue.js"></script>
-        <script src="jspack/jquery-3.3.1/jquery.min.js"></script>
-        <title>add video</title>
-    </head>
+    <!-- Bootstrap CSS -->
+    <script src="jspack/axios-0.19/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="jspack/vue-2.5.17/vue.js"></script>
+    <script src="jspack/jquery-3.3.1/jquery.min.js"></script>
+    <title>add video</title>
+</head>
 
-    <body>
+<body>
 
-        <!--<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>-->
-        <div id="navbar"></div>
-        <script>
-            $("#navbar").load("navbar.html");
-        </script>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    <div id="navbar"></div>
+    <script>
+        $("#navbar").load("navbar.html");
+    </script>
+
+    <form style="margin: 10px 20px 10px 10px;" id="addVideo">
+        <div class="form-group row">
+            <label for="WholeSerial" class="col-sm-2 col-form-label">Whole Serial</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="WholeSerial" placeholder="SW-444" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="ActressName" class="col-sm-2 col-form-label">Actress Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="ActressName" placeholder="" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Tags" class="col-sm-2 col-form-label">Tags</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Tags" placeholder="">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="PictureLink" class="col-sm-2 col-form-label">Picture Link</label>
+            <div class="col-sm-10">
+                <input type="url" class="form-control" id="PictureLink" placeholder="">
+                <div class="progress">
+                    <div class="progress-bar w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
-                <div class="form-group col-md-6">
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="PictureFile">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="PictureFileButton" aria-describedby="PictureFile">
+                        <label class="custom-file-label" for="PictureFileButton">Choose file</label>
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-        </form>
+        </div>
 
-        <script src="addVideo.js"></script>
+        <div class="form-group row">
+            <label for="MagnetLink" class="col-sm-2 col-form-label">Magnet Link</label>
+            <div class="col-sm-10">
+                <input type="url" class="form-control" id="MagnetLink" placeholder="magnet:?xt=urn:btih:c12fe1c06bba254a9dc9f519b335aa7c1367a88a">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="TorrentLink" class="col-sm-2 col-form-label">Torrent Link</label>
+            <div class="col-sm-10">
+                <input type="url" class="form-control" id="TorrentLink" placeholder="">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" v-on:click="">Submit</button>
+    </form>
 
-    </body>
+    <script src="jsbind/addVideo.js"></script>
+
+</body>
 
 </html>
