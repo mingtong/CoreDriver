@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_CoreDriverBackend.-1414242287.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_CoreDriverBackend.462841649.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
@@ -36,7 +37,7 @@
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive">
-        <e p="Debug" t="Include">
+        <e p="Release" t="Include">
           <e p="netcoreapp2.1" t="Include">
             <e p="CoreDriverBackend.AssemblyInfo.cs" t="Include" />
           </e>
@@ -52,7 +53,6 @@
         <e p="addArtist.html" t="Include" />
         <e p="addVideo.html" t="Include" />
         <e p="artistList.html" t="Include" />
-        <e p="html" t="Include" />
         <e p="image" t="Include">
           <e p="112.jpg" t="Include" />
         </e>

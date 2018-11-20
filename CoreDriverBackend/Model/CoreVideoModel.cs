@@ -174,7 +174,7 @@ namespace CoreDriverBackend.Model
             var newData = new CoreVideo()
             {
                 Prefix = prefix,
-                Serial = int.Parse(serial),
+                Serial = serial,
                 WholeSerial = wholeSerial,
                 Tags = tag,
                 MagnetLink = magnetLink,
@@ -278,7 +278,7 @@ namespace CoreDriverBackend.Model
             var db = new CoreDriverContext();
             var newData = new CoreVideo();
             newData.Prefix = prefix;
-            newData.Serial = int.Parse(serial);
+            newData.Serial = serial;
             newData.WholeSerial = wholeSerial;
             newData.Tags = tag;
             newData.MagnetLink = magnetLink;

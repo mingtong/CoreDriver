@@ -6,7 +6,7 @@ namespace CoreDriverBackend.Model
     public partial class CoreVideo
     {
         public string Prefix { get; set; }
-        public long Serial { get; set; }
+        public string Serial { get; set; }
         public string WholeSerial { get; set; }
         public string ActressName { get; set; }
         public string Tags { get; set; }

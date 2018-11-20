@@ -45,14 +45,30 @@ namespace CoreDriverBackend.Controllers
 
         // POST api/Video
         [HttpPost]
-        public void Post([FromBody]CoreVideo value)
+        public string Post([FromBody] object value)
         {
+            if (value == null)
+            {
+                return "503";
+            }
+
             var result = string.Empty;
+            var videoString = value.ToString();
+            //var dataObj = new JsonResult(value.ToString());
+            try
+            {
+                var coreVideo = JsonConvert.DeserializeObject<CoreVideo>(videoString);
+                IVideoDataService dataService = new CoreVideoModel();
+                result = dataService.AddNewData(coreVideo);
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
+            }
+
             
-            IVideoDataService dataService = new CoreVideoModel();
-            result = dataService.AddNewData(value);
-            
-            //return result;
+            return result;
         }
 
         // PUT api/values/5
