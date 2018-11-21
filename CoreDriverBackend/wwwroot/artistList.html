@@ -1,50 +1,69 @@
 <!doctype html>
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <script src="jspack/axios-0.19/dist/axios.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
-        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script src="jspack/vue-2.5.17/vue.js"></script>
-        <script src="jspack/jquery-3.3.1/jquery.min.js"></script>
-        <title>Artist</title>
-    </head>
+    <!-- Bootstrap CSS -->
+    <script src="jspack/axios-0.19/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="jspack/vue-2.5.17/vue.js"></script>
+    <script src="jspack/jquery-3.3.1/jquery.min.js"></script>
+    <title>Artist</title>
+</head>
 
-    <body>
-        <div id="navbar"></div>
-        <script>
-            $("#navbar").load("navbar.html");
-        </script>
-        <div id="vList">
-            <div class="card" v-for="item in items">
-                <div class="card-header">
-                    <p class="card-text">{{item.WholeSerial}}:{{item.Tags}}</p>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">{{item.ActressName}}</h5>
-                    <img src="image/112.jpg" class="rounded float-right" alt="..." class="img-thumbnail">
-
-                </div>
-                <div class="card-footer text-muted">
-                    <p class="card-text">{{item.MagnetLink}}</p>
-                </div>
+<body>
+    <div id="navbar"></div>
+    <script>
+        $("#navbar").load("navbar.html");
+    </script>
+    <table class="table table-hover table-dark" id="aList">
+        <thead>
+            <tr>
+                <th scope="row">Act Name</th>
+                <th scope="col">Tags</th>
+                <th scope="col">Birth</th>
+                <th scope="col">PictureLink</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="item in items">
+                <!-- <th scope="row">1</th> -->
+                <th scope="row">{{item.NameCn}}</th>
+                <th scope="col">{{item.Tags}}</th>
+                <th scope="col">{{item.Birth}}</th>
+                <th scope="col">{{item.PictureLink}}</th>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <div id="aList">
+        <div class="card" v-for="item in items">
+            <div class="card-header">
+                <p class="card-text">{{item.NameCn}}:{{item.Tags}}</p>
             </div>
-            <p></p>
+            <div class="card-body">
+                <h5 class="card-title">{{item.ActressName}}</h5>
+                <img src="image/110.jpg" class="rounded float-right" alt="..." class="img-thumbnail">
+
+            </div>
+            <div class="card-footer text-muted">
+                <p class="card-text">{{item.PictureLink}}</p>
+            </div>
         </div>
+        <p></p>
+    </div> -->
 
-        <script src="jsbind/artistList.js"></script>
+    <script src="jsbind/artistList.js"></script>
 
-    </body>
+</body>
 
 </html>

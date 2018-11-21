@@ -9,7 +9,6 @@ namespace CoreDriverBackend.Model
         public string NameEn { get; set; }
         public string NameJp { get; set; }
         public string Birth { get; set; }
-        public int Height { get; set; }
         public string Chest { get; set; }
         public string Tags { get; set; }
         public string PictureLink { get; set; }

@@ -22,7 +22,8 @@ namespace CoreDriverBackend.DataService
             string magnetLink, //maybe array
             string torrentLink, //maybe array
             string pictureLink, //maybe array
-            string companyName
+            string companyName,
+            string IsStored
             );
         string AddNewData(
             string json //in one string
@@ -42,7 +43,8 @@ namespace CoreDriverBackend.DataService
             string magnetLink, //maybe array
             string torrentLink, //maybe array
             string pictureLink, //maybe array
-            string companyName
+            string companyName,
+            string IsStored
         );
 
     }

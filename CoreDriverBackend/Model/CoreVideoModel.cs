@@ -144,7 +144,7 @@ namespace CoreDriverBackend.Model
         }
 
         public string AddNewData(string prefix, string serial, string wholeSerial, string nameCn, string nameEn, string nameJp,
-            string tag, string magnetLink, string torrentLink, string pictureLink, string companyName)
+            string tag, string magnetLink, string torrentLink, string pictureLink, string companyName, string IsStored)
         {
             if (string.IsNullOrEmpty(wholeSerial))
             {
@@ -273,7 +273,7 @@ namespace CoreDriverBackend.Model
         }
 
         public string ModifyData(string prefix, string serial, string wholeSerial, string nameCn, string nameEn, string nameJp,
-            string tag, string magnetLink, string torrentLink, string pictureLink, string companyName)
+            string tag, string magnetLink, string torrentLink, string pictureLink, string companyName, string IsStored)
         {
             var db = new CoreDriverContext();
             var newData = new CoreVideo();
@@ -285,6 +285,7 @@ namespace CoreDriverBackend.Model
             newData.TorrentLink = torrentLink;
             newData.PictureLink = pictureLink;
             newData.CompanyName = companyName;
+            newData.IsStored = IsStored;
             try
             {
                 db.CoreVideo.Update(newData);

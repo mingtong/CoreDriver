@@ -12,7 +12,6 @@ namespace CoreDriverBackend.DataService
             string nameEn,
             string nameJp,
             string birth,
-            int height,
             string chest,
             string tags, //maybe array
             string pictureLink //maybe array
@@ -27,7 +26,6 @@ namespace CoreDriverBackend.DataService
             string nameEn,
             string nameJp,
             string birth,
-            int height,
             string chest,
             string tags, //maybe array
             string pictureLink //maybe array

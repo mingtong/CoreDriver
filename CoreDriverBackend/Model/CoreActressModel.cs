@@ -20,7 +20,8 @@ namespace CoreDriverBackend.Model
             var db = new CoreDriverContext();
 
             var jsonArray = new JArray();
-            foreach (var v in db.CoreActress.ToList())
+            var actressList = db.CoreActress.ToList();
+            foreach (var v in actressList)
             {
                 var json = JsonConvert.SerializeObject(v);
                 jsonArray.Add(json);
@@ -96,7 +97,7 @@ namespace CoreDriverBackend.Model
             return jsonArray.ToString();
         }
 
-        public string AddNewData(string nameCn, string nameEn, string nameJp, string birth, int height, string chest, string tags,
+        public string AddNewData(string nameCn, string nameEn, string nameJp, string birth, string chest, string tags,
             string pictureLink)
         {
             var db = new CoreDriverContext();
@@ -106,7 +107,6 @@ namespace CoreDriverBackend.Model
                 NameEn = nameEn,
                 NameJp = nameJp,
                 Birth = birth,
-                Height = height,
                 Chest = chest,
                 Tags = tags,
                 PictureLink = pictureLink
@@ -141,7 +141,7 @@ namespace CoreDriverBackend.Model
             return "NotImplementedException";
         }
 
-        public string ModifyData(string prefix, string nameCn, string nameEn, string nameJp, string birth, int height, string chest,
+        public string ModifyData(string prefix, string nameCn, string nameEn, string nameJp, string birth, string chest,
             string tags, string pictureLink)
         {
             var db = new CoreDriverContext();
@@ -151,7 +151,6 @@ namespace CoreDriverBackend.Model
                 NameEn = nameEn,
                 NameJp = nameJp,
                 Birth = birth,
-                Height = height,
                 Chest = chest,
                 Tags = tags,
                 PictureLink = pictureLink

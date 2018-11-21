@@ -14,5 +14,6 @@ namespace CoreDriverBackend.Model
         public string TorrentLink { get; set; }
         public string PictureLink { get; set; }
         public string CompanyName { get; set; }
+        public string IsStored { get; set; }
     }
 }
