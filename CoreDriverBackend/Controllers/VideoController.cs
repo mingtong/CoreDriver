@@ -45,7 +45,7 @@ namespace CoreDriverBackend.Controllers
 
         // POST api/Video
         [HttpPost]
-        public string Post([FromBody] object value)
+        public string Post([FromBody] CoreVideo value)
         {
             if (value == null)
             {
@@ -57,9 +57,9 @@ namespace CoreDriverBackend.Controllers
             //var dataObj = new JsonResult(value.ToString());
             try
             {
-                var coreVideo = JsonConvert.DeserializeObject<CoreVideo>(videoString);
+                //var coreVideo = JsonConvert.DeserializeObject<CoreVideo>(videoString);
                 IVideoDataService dataService = new CoreVideoModel();
-                result = dataService.AddNewData(coreVideo);
+                result = dataService.AddNewData(value);
             }
             catch (Exception exception)
             {

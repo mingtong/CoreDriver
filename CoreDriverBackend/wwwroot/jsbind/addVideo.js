@@ -31,10 +31,10 @@ function postData() {
             Serial: addVideo.$data.Serial,
             WholeSerial: addVideo.$data.WholeSerial,
             ActressName: addVideo.$data.ActressName,
-            Tags: "长腿,高颜值",
-            MagnetLink: "",
-            TorrentLink: "",
-            PictureLink: "",
+            Tags: addVideo.$data.Tags,
+            MagnetLink: addVideo.$data.MagnetLink,
+            TorrentLink: addVideo.$data.TorrentLink,
+            PictureLink: addVideo.$data.PictureLink,
             CompanyName: ""
 
         })

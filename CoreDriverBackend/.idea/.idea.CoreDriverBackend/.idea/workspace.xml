@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e8a1266-f8b7-4963-a9b2-a7e0e8b9a144" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreDriverBackend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreDriverBackend/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreDriverBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreDriverBackend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/jsbind/addVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/jsbind/addVideo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,23 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/VideoController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="59" column="65" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="71" />
+            <state relative-caret-position="116">
+              <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
               <folding>
-                <marker date="1542731477971" expanded="false" signature="6:313" ph="..." />
-                <marker date="1542731477971" expanded="true" signature="472:2301" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="545:2299" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="624:914" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="1009:1250" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="1348:2046" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="1389:1447" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="1613:1858" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="1898:1995" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="2157:2177" ph="{...}" />
-                <marker date="1542731477971" expanded="true" signature="2273:2293" ph="{...}" />
+                <marker date="1542759353547" expanded="false" signature="6:313" ph="..." />
+                <marker date="1542759353547" expanded="true" signature="472:2302" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="545:2300" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="624:914" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="1009:1250" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="1351:2047" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="1392:1450" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="1616:1859" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="1899:1996" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="2158:2178" ph="{...}" />
+                <marker date="1542759353547" expanded="true" signature="2274:2294" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -84,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/CoreVideoModel.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="346">
@@ -297,9 +296,9 @@
         <option value="$PROJECT_DIR$/Model/Definition/CoreActress.cs" />
         <option value="$PROJECT_DIR$/Model/CoreActressModel.cs" />
         <option value="$PROJECT_DIR$/Program.cs" />
-        <option value="$PROJECT_DIR$/Controllers/VideoController.cs" />
         <option value="$PROJECT_DIR$/Model/Definition/CoreVideo.cs" />
         <option value="$PROJECT_DIR$/Model/CoreVideoModel.cs" />
+        <option value="$PROJECT_DIR$/Controllers/VideoController.cs" />
       </list>
     </option>
   </component>
@@ -429,12 +428,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542387195373</updated>
       <workItem from="1542387197815" duration="18471000" />
-      <workItem from="1542448679243" duration="26552000" />
+      <workItem from="1542448679243" duration="28043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46230000" />
+    <option name="totallyTimeSpent" value="47721000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,13 +448,13 @@
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32331902" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32331902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32928476" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928476" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994602" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3994602" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32928476" />
@@ -503,26 +502,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Controllers/VideoController.cs</url>
-          <line>49</line>
-          <properties documentPath="$PROJECT_DIR$/Controllers/VideoController.cs" initialLine="49">
-            <startOffsets>
-              <option value="1371" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1389" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Controllers/VideoController.cs</url>
           <line>65</line>
           <properties documentPath="$PROJECT_DIR$/Controllers/VideoController.cs" initialLine="65">
             <startOffsets>
-              <option value="1929" />
+              <option value="1930" />
             </startOffsets>
             <endOffsets>
-              <option value="1958" />
+              <option value="1959" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
@@ -797,26 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/VideoController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="59" column="65" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="71" />
-          <folding>
-            <marker date="1542731477971" expanded="false" signature="6:313" ph="..." />
-            <marker date="1542731477971" expanded="true" signature="472:2301" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="545:2299" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="624:914" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="1009:1250" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="1348:2046" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="1389:1447" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="1613:1858" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="1898:1995" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="2157:2177" ph="{...}" />
-            <marker date="1542731477971" expanded="true" signature="2273:2293" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Definition/CoreVideo.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -882,6 +848,26 @@
             <marker date="1542732433661" expanded="true" signature="8729:8826" ph="{...}" />
             <marker date="1542732433661" expanded="true" signature="8846:8904" ph="{...}" />
             <marker date="1542732433661" expanded="false" signature="8979:9020" ph="private logic" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/VideoController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding>
+            <marker date="1542759353547" expanded="false" signature="6:313" ph="..." />
+            <marker date="1542759353547" expanded="true" signature="472:2302" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="545:2300" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="624:914" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="1009:1250" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="1351:2047" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="1392:1450" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="1616:1859" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="1899:1996" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="2158:2178" ph="{...}" />
+            <marker date="1542759353547" expanded="true" signature="2274:2294" ph="{...}" />
           </folding>
         </state>
       </provider>
